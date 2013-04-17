@@ -2,6 +2,60 @@ exports.BattleFormats = {
 
 	// Singles
 	///////////////////////////////////////////////////////////////////
+        pxyou: {
+                name: "Project XY OU",
+                section: "Singles",
+
+                effectType: 'Format',
+                challengeDefault: true,
+                rated: true,
+                challengeShow: true,
+                searchShow: true,
+                isTeambuilderFormat: true,
+                ruleset: ['Pokemon', 'Standard', 'Evasion Abilities Clause', 'Team Preview'],
+                banlist: ['Uber','Standard', 'Soul Dew']
+        },
+
+        pxyuu: {
+                name: "Project XY UU",
+                section: "Singles",
+
+                effectType: 'Format',
+                challengeDefault: true,
+                rated: true,
+                challengeShow: true,
+                searchShow: true,
+                isTeambuilderFormat: true,
+                ruleset: ['OU'],
+                banlist: ['OU', 'BL', 'Drought', 'Sand Stream']
+        },
+
+        pxyru: {
+                name: "Project XY RU",
+                section: "Singles",
+
+                effectType: 'Format',
+                challengeDefault: true,
+                rated: true,
+                challengeShow: true,
+                searchShow: true,
+                isTeambuilderFormat: true,
+                ruleset: ['UU'],
+                banlist: ['UU', 'BL2', 'Shell Smash + Baton Pass']
+        },
+
+        pxynu: {
+                name: "Project XY NU",
+                section: "Singles",
+
+                effectType: 'Format',
+                rated: true,
+                challengeShow: true,
+                searchShow: true,
+                isTeambuilderFormat: true,
+                ruleset: ['RU'],
+                banlist: ['RU','BL3']
+        },
 
 	randombattle: {
 		name: "Random Battle",
