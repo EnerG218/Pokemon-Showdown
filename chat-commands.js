@@ -1029,11 +1029,11 @@ function parseCommandLocal(user, cmd, target, room, socket, message) {
 		showOrBroadcastStart(user, cmd, room, socket, message);
 		showOrBroadcast(user, cmd, room, socket,
 			'<div class="infobox">' +
-			'+ <b>Voice</b> - They can use ! commands like !groups, and talk during moderated chat<br />' +
-			'% <b>Driver</b> - The above, and they can also mute users and run tournaments<br />' +
-			'@ <b>Moderator</b> - The above, and they can ban users and check for alts<br />' +
-			'&amp; <b>Leader</b> - The above, and they can promote moderators and force ties<br />'+
-			'~ <b>Administrator</b> - They can do anything, like change what this message says'+
+			'+ <b>Interns</b> - Basically the most useless rank in existant. They\'ll eventually learn how to be obvservers.<br />' +
+			'% <b>Observers</b> - They try to make sure nothing goes wrong with the Lab Rats (normal users).<br />' +
+			'@ <b>Scientist</b> - These are veteran. They may nominate people judged on their work to become an tinern. <br />' +
+			'&amp; <b>Mad Scientist</b> - Loved users who have gone mad with power. Beware, they will ban you.<br />'+
+			'~ <b>Evil Scientist</b> - Beware: They will conduct expirement on any lab rat of their choice.'+
 			'</div>');
 		return false;
 		break;
@@ -1110,7 +1110,23 @@ function parseCommandLocal(user, cmd, target, room, socket, message) {
 			'</div>');
 		return false;
 		break;
-
+        case 'xy':
+        case '!xy':
+        case 'pxy':
+        case '!pxy':
+                showOrBroadcastStart(user, cmd, room, socket, message);
+                showOrBroadcast(user, cmd, room, socket,
+                        '<div class="infobox">' +
+                        'Project XY is a mod created by iSmogoon.<br />' +
+                        'This mod is run on Fantasy Lab, where you are right at this moment.<br />' +
+                        '<a href="http://pastebin.com/raw.php?i=Q0pdWBzP" target="_blank">Project XY Change log</a>' +<br />' +
+                        '<a href="http://pastebin.com/raw.php?i=vRBrG5c4" target="_blank">Project XY FAQ</a>' +<br />' +
+                        '<a href="http://smogon.com" target="_blank">Smogon thread (Coming soon!)</a>' +<br />' +
+                        'Project XY is currently in version: 1.0.1
+                        'Credits to: iSmogoon, EnerG218, kupo, and Panpaw for helping this mod be!' +<br />'+
+                        '</div>');
+                return false;
+                break;
 	case 'rules':
 	case 'rule':
 	case '!rules':
